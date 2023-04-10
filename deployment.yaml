@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: datascientest
-          image: 274127640471.dkr.ecr.us-east-2.amazonaws.com/datascientest:1.1
+          image: 496437865731.dkr.ecr.us-east-2.amazonaws.com/datascientest:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
