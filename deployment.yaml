@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: datascientest
+  labels:
+    app: datascientest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: datascientest
+  template:
+    metadata:
+      labels:
+        app: datascientest
+    spec:
+      containers:
+        - name: datascientest
+          image: 496437865731.dkr.ecr.us-east-2.amazonaws.com/datascientest:1.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
