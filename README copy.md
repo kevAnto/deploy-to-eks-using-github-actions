@@ -4,6 +4,8 @@
 
 eksctl create cluster --name datascientest --region us-east-1 --nodegroup-name linux-nodes --node-type t2.micro --nodes 2
 
+aws eks update-kubeconfig --name datascientest --region us-east-1
+
 2. Then create .github folder and then create workflow folder inside .github folder
 3. create file with .yml extension and write the workflow code
 4. Create a github repository
